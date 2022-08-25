@@ -1,0 +1,48 @@
+{
+  "name": "devcamper_api",
+  "version": "1.0.0",
+  "description": "Express MongoDB API",
+  "main": "/config/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon ./config/server",
+    "start": "node ./config/server",
+    "db-import": "node ./config/db-seeder --i",
+    "db-destroy": "node ./config/db-seeder --d"
+  },
+  "author": "Efat Samir",
+  "license": "MIT",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.5.1",
+    "helmet": "^5.1.1",
+    "hpp": "^0.2.3",
+    "html-to-text": "^8.2.1",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.5.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.7.7",
+    "pug": "^3.0.2",
+    "sharp": "^0.30.7",
+    "slugify": "^1.6.5",
+    "uninstall": "^0.0.0",
+    "uuid": "^8.3.2",
+    "validator": "^13.7.0",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.20.0",
+    "nodemon": "^2.0.19"
+  }
+}
