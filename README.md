@@ -1,17 +1,30 @@
-## Description
-DevCamper API is a booking app for offline bootcamps & courses
+# DevCamper API
+> DevCamper API is a booking app for offline bootCamps & courses
 
-## Technologies 
-Express, MongoDB
-ES6 module instead of common JS in Express
+## Usage
+rename `.env.example` to `.env` and update values/settings to your own
 
-## Start the app in Development mode
-run this script `npm run dev`
+## Install Dependencies
+```
+npm install
+```
+## Run App
+```
+# Data seeding
+npm run db-import
 
-## Start the app in Production mode
-run this script `npm run start`
+# Data destroy
+npm run db-destroy
 
-## Data Seeding ##
-start the app by running `npm run dev`
-Import data into your database: `npm run db-import`
-Delete the imported data from the database: `npm run db-destroy`
+# Run in development mode
+npm run dev
+
+# Run in production mode
+npm start
+```
+
+- Version: 1.0.0
+- License: MIT
+
+
+
